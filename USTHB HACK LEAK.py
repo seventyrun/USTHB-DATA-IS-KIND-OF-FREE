@@ -2,12 +2,12 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import requests
 
-//read data from an xlsx file
+#read data from an xlsx file
 data = pd.read_excel (r'Classeur1.xlsx')
 list_eleve=data['numero'].tolist()
 
-//for each matricule in the list go to the url and send it then get an html page response and extract data from it by using soup
-//and print in on the screen
+#for each matricule in the list go to the url and send it then get an html page response and extract data from it by using soup
+#and print in on the screen
 
 for i in list_eleve:
     print(i)
